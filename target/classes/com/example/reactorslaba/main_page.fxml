@@ -8,26 +8,28 @@
 
       <TableView fx:id="countyTable" layoutX="28.0" layoutY="40.0" prefHeight="313.0" prefWidth="210.0">
         <columns>
-          <TableColumn prefWidth="82.0" text="County" />
-          <TableColumn prefWidth="127.0" text="Total consumption" />
+          <TableColumn fx:id="countyNameColumn" prefWidth="82.0" text="County" />
+          <TableColumn fx:id="countyTotalConsumption" prefWidth="127.0" text="Total consumption" />
         </columns>
       </TableView>
 
       <TableView fx:id="companyTable" layoutX="492.0" layoutY="40.0" prefHeight="313.0" prefWidth="210.0">
         <columns>
-          <TableColumn prefWidth="87.0" text="Company" />
-          <TableColumn prefWidth="121.0" text="Total consumption" />
+          <TableColumn fx:id="companyNameColumn" prefWidth="87.0" text="Company" />
+          <TableColumn fx:id="companyTotalConsumption" prefWidth="121.0" text="Total consumption" />
         </columns>
       </TableView>
 
       <TableView fx:id="regionTable" layoutX="261.0" layoutY="40.0" prefHeight="313.0" prefWidth="210.0">
         <columns>
-          <TableColumn prefWidth="82.0" text="Region" />
-          <TableColumn prefWidth="127.0" text="Total consumption" />
+          <TableColumn fx:id="regionNameColumn" prefWidth="82.0" text="Region" />
+          <TableColumn fx:id="regionTotalConsumption" prefWidth="127.0" text="Total consumption" />
         </columns>
       </TableView>
        
-      <Button layoutX="145.0" layoutY="377.0" mnemonicParsing="false" prefHeight="47.0" prefWidth="443.0" text="Make calculation" />
+      <Button layoutX="145.0" layoutY="377.0" mnemonicParsing="false" prefHeight="47.0" prefWidth="443.0"
+              text="Make calculation"
+                onAction="#makeCalculation"/>
 
        <Label layoutX="70.0" layoutY="14.0" prefHeight="22.0" prefWidth="126.0" text="Country" />
        <Label layoutX="534.0" layoutY="14.0" prefHeight="22.0" prefWidth="126.0" text="Region" />
