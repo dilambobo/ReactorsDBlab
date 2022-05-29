@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="449.0" prefWidth="727.0" xmlns="http://javafx.com/javafx/11.0.2" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.reactorslaba.Controller">
+   <children>
+
+      <TableView fx:id="countyTable" layoutX="28.0" layoutY="40.0" prefHeight="313.0" prefWidth="210.0">
+        <columns>
+          <TableColumn prefWidth="82.0" text="County" />
+          <TableColumn prefWidth="127.0" text="Total consumption" />
+        </columns>
+      </TableView>
+
+      <TableView fx:id="companyTable" layoutX="492.0" layoutY="40.0" prefHeight="313.0" prefWidth="210.0">
+        <columns>
+          <TableColumn prefWidth="87.0" text="Company" />
+          <TableColumn prefWidth="121.0" text="Total consumption" />
+        </columns>
+      </TableView>
+
+      <TableView fx:id="regionTable" layoutX="261.0" layoutY="40.0" prefHeight="313.0" prefWidth="210.0">
+        <columns>
+          <TableColumn prefWidth="82.0" text="Region" />
+          <TableColumn prefWidth="127.0" text="Total consumption" />
+        </columns>
+      </TableView>
+       
+      <Button layoutX="145.0" layoutY="377.0" mnemonicParsing="false" prefHeight="47.0" prefWidth="443.0" text="Make calculation" />
+
+       <Label layoutX="70.0" layoutY="14.0" prefHeight="22.0" prefWidth="126.0" text="Country" />
+       <Label layoutX="534.0" layoutY="14.0" prefHeight="22.0" prefWidth="126.0" text="Region" />
+       <Label layoutX="303.0" layoutY="14.0" prefHeight="22.0" prefWidth="126.0" text="Company" />
+   </children>
+
+</AnchorPane>
