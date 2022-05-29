@@ -85,13 +85,13 @@ public class Controller {
         countyTotalConsumption.setCellValueFactory(new PropertyValueFactory("consumption"));
         countyTable.setItems(dataCountry);
 
-        //заполнение таблицы компаний
+        //заполнение таблицы компаний (??)
         ObservableList<TableClass> dataCompany = FXCollections.observableArrayList();
         for (Company company : dbConnector.getCompanies()) {
             dataCompany.add(new TableClass(new SimpleStringProperty(company.getName()), new SimpleDoubleProperty(company.getConsumption())));
         }
         companyNameColumn.setCellValueFactory(new PropertyValueFactory<>("name"));
-        companyNameColumn.setCellValueFactory(new PropertyValueFactory("consumption"));
+        companyTotalConsumption.setCellValueFactory(new PropertyValueFactory("consumption"));
         companyTable.setItems(dataCountry);
     }
 

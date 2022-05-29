@@ -32,8 +32,8 @@ public class JsonParser {
 
             JSONArray reactorJsonArray = (JSONArray) rootJsonObject.get("ReactorType");
 
-            for (Object it : reactorJsonArray) {
-                JSONObject reactorJsonObject = (JSONObject) it;
+            for (Object reactorObject : reactorJsonArray) {
+                JSONObject reactorJsonObject = (JSONObject) reactorObject;
 
                 String name = (String) reactorJsonObject.get("name");
                 double burnup = Double.parseDouble((String) reactorJsonObject.get("burnup"));

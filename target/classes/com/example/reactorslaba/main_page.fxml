@@ -32,8 +32,8 @@
                 onAction="#makeCalculation"/>
 
        <Label layoutX="70.0" layoutY="14.0" prefHeight="22.0" prefWidth="126.0" text="Country" />
-       <Label layoutX="534.0" layoutY="14.0" prefHeight="22.0" prefWidth="126.0" text="Region" />
-       <Label layoutX="303.0" layoutY="14.0" prefHeight="22.0" prefWidth="126.0" text="Company" />
+       <Label layoutX="534.0" layoutY="14.0" prefHeight="22.0" prefWidth="126.0" text="Company" />
+       <Label layoutX="303.0" layoutY="14.0" prefHeight="22.0" prefWidth="126.0" text="Region" />
    </children>
 
 </AnchorPane>

@@ -40,9 +40,7 @@ public class DBConnector {
     }
 
     public void setUnits(ResultSet res, String tabName, ArrayList<Reactor> reactorArrayList) throws SQLException {
-
         while (res.next()) {
-
             if (res.getString(tabName + ".status").trim().equals("in operation")) {
 
                 int id = res.getInt(tabName + ".id");
@@ -64,7 +62,6 @@ public class DBConnector {
                 if (burnup == 0) {
                     burnup = 42;
                 }
-
                 units.add(new Unit(id, name, type, thermalCapacity, loadFactor, burnup, siteID));
             }
         }
@@ -73,7 +70,6 @@ public class DBConnector {
     public void setSites(ResultSet res, String tabName) throws SQLException {
 
         while (res.next()) {
-
             if (res.getString(tabName + ".status").trim().equals("in operation")) {
 
                 int id = res.getInt(tabName + ".id");
