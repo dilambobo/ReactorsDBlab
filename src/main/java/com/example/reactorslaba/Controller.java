@@ -92,7 +92,7 @@ public class Controller {
         }
         companyNameColumn.setCellValueFactory(new PropertyValueFactory<>("name"));
         companyTotalConsumption.setCellValueFactory(new PropertyValueFactory("consumption"));
-        companyTable.setItems(dataCountry);
+        companyTable.setItems(dataCompany);
     }
 
     public static void error(Exception e) {

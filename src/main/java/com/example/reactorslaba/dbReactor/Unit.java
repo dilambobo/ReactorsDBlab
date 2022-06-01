@@ -82,6 +82,7 @@ public class Unit {
         return consumption;
     }
 
+    //САМАЯ ВАЖНАЯ ФОРМУЛА!!!
     public void setConsumption() {
         this.consumption = thermalCapacity * loadFactor * 365 / (burnout * 100000);
     }
